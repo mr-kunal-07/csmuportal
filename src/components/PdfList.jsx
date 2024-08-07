@@ -10,14 +10,14 @@ const PdfList = ({ department, semester }) => {
   );
 
   return (
-    <div className="flex flex-row gap-4  sm:flex-nowrap flex-wrap">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       {filteredPdfs.map((pdf) => (
         <a
           key={pdf.id}
           href={pdf.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="block bg-gray-800 p-4 rounded-lg shadow-lg hover:bg-gray-700 transition-colors w-full sm:w-1/2 md:w-1/3"
+          className="block bg-gray-800 p-4 rounded-lg shadow-lg hover:bg-gray-700 transition-colors"
         >
           <div className="flex flex-col h-full justify-between">
             <div>
